@@ -4,7 +4,7 @@ This repository contains the R code, figures, and results for **Task 2: Cell-cel
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 📦 Task2_results/
@@ -17,7 +17,7 @@ This repository contains the R code, figures, and results for **Task 2: Cell-cel
 
 ---
 
-## 🔬 Dataset
+## Dataset
 
 - **Source**: [GSE283269 - NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283269)
 - **Platform**: Spatial Transcriptomics
@@ -26,7 +26,7 @@ This repository contains the R code, figures, and results for **Task 2: Cell-cel
 
 ---
 
-## 🔧 Analysis Pipeline Overview
+## Analysis Pipeline Overview
 
 1. **Download and preprocess raw count data** (`fasterq-dump`, `hisat2`, `samtools`)
 2. **Count matrix generation** via `featureCounts`
@@ -41,7 +41,7 @@ This repository contains the R code, figures, and results for **Task 2: Cell-cel
 
 ---
 
-## 📊 Key Outputs
+## Key Outputs
 
 - `top_genes_in_pseudotime_filtered.png` – Visualization of top dynamic genes along pseudotime
 - `go_enrichment_barplot.png` – Top enriched GO biological processes
@@ -51,7 +51,7 @@ This repository contains the R code, figures, and results for **Task 2: Cell-cel
 
 ---
 
-## 📝 How to Reproduce
+## How to Reproduce
 
 Open RStudio and run the following:
 
@@ -69,7 +69,7 @@ This script will:
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Install the following R packages:
 
@@ -83,14 +83,9 @@ BiocManager::install(c("monocle3", "clusterProfiler", "org.Mm.eg.db"))
 
 ---
 
-## 💡 Suggested Improvements
+## Suggested Improvements
 
 - Apply additional dimensionality reduction (e.g., Harmony or batch correction)
 - Perform sub-clustering and cell-cell interaction modeling using tools like **CellChat** or **NicheNet**
 - Annotate gene clusters using public marker gene databases
 
----
-
-## 📄 License
-
-This project is provided for academic and educational use only. Please cite the original data source and associated tools used in the analysis.
